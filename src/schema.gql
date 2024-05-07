@@ -1,0 +1,48 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+input CreateTodoInput {
+  """Example field (false)"""
+  completed: Boolean!
+
+  """Example field (placeholder)"""
+  description: String!
+
+  """Example field (placeholder)"""
+  title: String!
+}
+
+type Mutation {
+  createTodo(createTodoInput: CreateTodoInput!): Todo!
+  removeTodo(id: String!): Todo!
+  updateTodo(updateTodoInput: UpdateTodoInput!): Todo!
+}
+
+type Query {
+  todo(id: String!): Todo!
+  todos: [Todo!]!
+}
+
+type Todo {
+  """Example field (false)"""
+  completed: Boolean!
+
+  """Example field (placeholder)"""
+  description: String!
+
+  """Example field (placeholder)"""
+  title: String!
+}
+
+input UpdateTodoInput {
+  """Example field (false)"""
+  completed: Boolean!
+
+  """Example field (placeholder)"""
+  description: String!
+  id: String!
+
+  """Example field (placeholder)"""
+  title: String!
+}
